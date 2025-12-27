@@ -1,0 +1,24 @@
+# Rust build artifacts
+target/
+Cargo.lock
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Your test firmware files
+*.img
+*.tar
+*.tar.md5
+*.zip
+*.md5
+
+# Compiled binaries
+magisk_patcher
+magisk_patcher.exe
