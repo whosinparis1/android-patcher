@@ -225,7 +225,8 @@ impl eframe::App for PatcherApp {
 fn main() -> Result<(), eframe::Error> {
     // window settings
     let window_options = eframe::NativeOptions {
-        initial_window_size: Some(egui::vec2(500.0, 550.0)),
+        viewport: egui::ViewportBuilder::default()
+            .with_inner_size(egui::vec2(500.0, 550.0)),
         ..Default::default()
     };
     
@@ -236,3 +237,6 @@ fn main() -> Result<(), eframe::Error> {
         Box::new(|_| Box::new(PatcherApp::default())),
     )
 }
+
+// tbh i have no idea what im doing with gui in rust 
+// i built this with 0 brain cells
